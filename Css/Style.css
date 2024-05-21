@@ -123,12 +123,19 @@ body, html {
   
   .frame .text-wrapper {
     position: absolute;
+    top: 8px;
     left: 18px;
     color: black;
     font-size: 18px;
     letter-spacing: 0;
     line-height: normal;
+    border: none;
   }
+
+  .text-wrapper:focus {
+    border: none;
+    outline: none;
+}
   
   .frame .overlap-group {
     position: absolute;

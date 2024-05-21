@@ -1,0 +1,149 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-center {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffeb3b; /* Highlight color when hovering */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    background: rgba(0, 0, 0, 0.4); /* Adjust transparency as needed */
+    color: white;
+    padding: 150px;
+}
+
+.content-left {
+    max-width: 400px; /* Adjust max width as needed */
+    text-align: left;
+}
+
+.overlay h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin: 10px 0;
+}
+
+.frame {
+    position: relative;
+    width: 390px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .frame .text-wrapper {
+    position: absolute;
+    left: 18px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .frame .overlap-group {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    top: 8px;
+    left: 337px;
+    background-color: #c3fdc9;
+    border-radius: 12px;
+  }
+  
+  .frame .search {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 14px
+  }

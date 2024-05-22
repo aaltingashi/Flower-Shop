@@ -154,3 +154,132 @@ body, html {
     top: 5px;
     left: 14px
   }
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-gif,
+.right-gif {
+    flex: 0 0 20%; /* 20% width for each GIF */
+}
+
+.left-gif img, .right-gif img {
+    height: 300px;
+}
+
+.middle-content {
+    flex: 1; /* Takes up remaining space */
+    text-align: center; /* Center-align text */
+    font-size: 1.5rem;
+}
+
+.box {
+    width: 375px;
+    height: 219px;
+    margin: 0 10px;
+    margin-bottom: 120px;
+  }
+  
+  .box .group {
+    width: 375px;
+    height: 219px;
+  }
+  
+  .box .overlap-group {
+    position: relative;
+    width: 377px;
+    height: 219px;
+  }
+  
+  .box .rectangle {
+    position: absolute;
+    width: 375px;
+    height: 151px;
+    top: 68px;
+    left: 0;
+    background-color: #dcf9b9;
+    border-radius: 12px;
+  }
+  
+  .box .ellipse {
+    width: 114px;
+    height: 107px;
+    left: 121px;
+    background-color: #ffffff;
+    border-radius: 57.01px/53.5px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .box .div {
+    position: absolute;
+    width: 375px;
+    height: 192px;
+    top: 2px;
+    left: 2px;
+  }
+  
+  .box .ellipse-2 {
+    width: 96px;
+    height: 96px;
+    left: 130px;
+    background-color: #10a400;
+    border-radius: 48px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .box .large-assortment {
+    position: absolute;
+    top: 113px;
+    left: 90px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper {
+    color: #004807;
+  }
+  
+  .box .span {
+    color: #000000;
+  }
+  
+  .box .text-wrapper-2 {
+    color: #10a400;
+  }
+  
+  .box .p {
+    position: absolute;
+    width: 371px;
+    top: 150px;
+    left: 0;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #1e1e1e80;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .vector {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    top: 28px;
+    left: 158px;
+  }
+
+  .box-content {
+    display: flex;
+    justify-content: center;
+}
+  

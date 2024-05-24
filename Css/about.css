@@ -1,0 +1,214 @@
+/* About Us Page */
+
+.aboutus-container {
+    overflow: hidden;
+  }
+  
+  .aboutus-container,
+  .aboutus-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .aboutus-container {
+    position: relative;
+    width: 524px;
+    height: 283px;
+    margin-top: 14%;
+    border-radius: 8px;
+  }
+  .who-is-floshop {
+    position: relative;
+    width: 403px;
+    height: 70px;
+    margin: 0 0 0 0;
+    font-family: Italiana, var(--default-font-family);
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 69.502px;
+    text-align: left;
+    text-overflow: initial;
+    white-space: nowrap;
+  }
+  .who-is {
+    position: relative;
+    color: #000000;
+    font-family: Italiana, var(--default-font-family);
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 69.502px;
+    text-align: left;
+  }
+  .floshop {
+    position: relative;
+    color: #000000;
+    font-family: Italiana, var(--default-font-family);
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 69.502px;
+    text-align: left;
+  }
+  .one-stop-shop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 524px;
+    height: 110px;
+    margin: 12px 0 0 0;
+    color: #1e1e1e;
+    font-family: Lato, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-align: left;
+    z-index: 1;
+  }
+  .aboutus-button {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 209px;
+    height: 58px;
+    top: 225px;
+    left: 216px;
+    padding: 12px 24px 12px 24px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #10a400;
+    z-index: 6;
+    border-radius: 8px;
+  }
+  .watch-video {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 27px;
+    color: #10a400;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  
+  
+  .aboutus-button-1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 183px;
+    height: 51px;
+    top: 228px;
+    left: 0;
+    padding: 12px 24px 12px 24px;
+    cursor: pointer;
+    background: #10a400;
+    border: none;
+    z-index: 2;
+    border-radius: 8px;
+  }
+  .aboutus-contact-us {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 27px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .aboutus-container .arrow-right {
+    flex-shrink: 0;
+    position: relative;
+    width: 24px;
+    height: 20px;
+    z-index: 4;
+    overflow: hidden;
+  }
+  
+  .about-section{
+    display: flex;
+      justify-content: center;
+  }
+  
+  .about-mainphoto{
+    margin-left: 8%;
+  }
+  
+  .about-mainphoto {
+    position: relative; /* Establishes a positioning context */
+  }
+  
+  .about-img,
+  .about-gif {
+    display: block; /* Ensures both images behave like block elements */
+    max-width: 100%; /* Ensures both images don't exceed their container's width */
+    height: auto; /* Allows both images to scale proportionally */
+    position: relative; /* Makes the images positioned relative to the container */
+  }
+  
+  .about-gif {
+    position: absolute; /* Positions the GIF relative to the container */
+    top: 60%; /* Places the GIF at the top of the container */
+    left: 0; /* Places the GIF at the left of the container */
+    z-index: 1; /* Sets the stacking order of the GIF above the image */
+  }
+  
+  /* Style the modal */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal content */
+  .modal-content {
+  
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+  
+    width: 44%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close button */
+  .close {
+    color: #ff0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 100px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  

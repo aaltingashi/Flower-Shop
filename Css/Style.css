@@ -13,45 +13,56 @@ body, html {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: absolute;
-    width: calc(100% - 40px); /* Adjust width to account for padding */
-    top: 0;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: calc(100% - 40px); /* Adjust width to account for padding */
+  top: 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
 }
 
 .nav-left, .nav-center, .nav-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-left {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .nav-center {
-    justify-content: center;
-    flex-grow: 1;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .nav-right {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2em;
-    transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2em;
 }
 
-.navbar a:hover {
-    color: #ffeb3b; /* Highlight color when hovering */
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #218838; /* Highlight color when hovering or focusing */
 }
+
+.navbar.scrolled {
+  background-color: white; /* Change background color when scrolled */
+}
+
+.navbar.scrolled a {
+  color: black; /* Change text color when scrolled */
+}
+
 
 .icon {
     width: 24px;
@@ -364,4 +375,60 @@ body, html {
   font-size: 24px;
   cursor: pointer;
   margin: 0 10px;
+}
+
+/* Categories */
+.container-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 70px;
+  position: relative;
+}
+.top {
+  text-align: center;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.container-categories .category {
+  text-align: center;
+  margin: 0 20px;
+}
+.container-categories .bottom {
+  text-align: center;
+}
+.container-categories button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.img-category {
+  width: 352px;
+  height: 420px;
+  border-radius: 12px;
+}
+
+.left-top-gif {
+  position: absolute;
+  top: -172px;
+  left: -202px;
+  z-index: -99;
+}
+
+.right-bottom-gif {
+  position: absolute;
+  bottom: -246px;
+  right: -105px;
+  z-index: -99;
 }

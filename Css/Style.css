@@ -16,13 +16,18 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   position: fixed;
-  width: calc(100% - 40px); /* Adjust width to account for padding */
+  width: 100%; /* Span the entire viewport width */
   top: 0;
   z-index: 10;
-  background-color: transparent;
-  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+  background-color: rgba(0, 0, 0, 0.2); /* Light transparent background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 15px; /* Rounded bottom-left corner */
+  border-bottom-right-radius: 15px; /* Rounded bottom-right corner */
+  padding: 10px 20px; /* Adjust padding for content */
+  width: 100%; /* Span the entire width of the page */
 }
 
 .nav-left, .nav-center, .nav-right {
@@ -44,6 +49,7 @@ body, html {
   justify-content: flex-end;
 }
 
+/* Default color is white */
 .navbar a {
   color: white;
   text-decoration: none;
@@ -51,19 +57,10 @@ body, html {
   font-size: 1.2em;
 }
 
-.navbar a:hover,
-.navbar a:focus {
-  background-color: #218838; /* Highlight color when hovering or focusing */
+/* Highlight color when hovering */
+.navbar a:hover  {
+  color : #218838;
 }
-
-.navbar.scrolled {
-  background-color: white; /* Change background color when scrolled */
-}
-
-.navbar.scrolled a {
-  color: black; /* Change text color when scrolled */
-}
-
 
 .icon {
     width: 24px;

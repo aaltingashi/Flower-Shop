@@ -183,22 +183,35 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal content */
-  .modal-content {
-  
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-  
-    width: 44%; /* Could be more or less, depending on screen size */
-  }
+/* Modal content */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0); /* Adjust opacity here */
+  padding: 20px;
+  width: 60%; /* Adjust the width as needed */
+  max-width: 800px; /* Set a maximum width */
+  border-radius: 8px;
+}
+
+/* Video inside the modal */
+.modal-content iframe {
+  width: 100%; /* Set the width to 100% of the modal content */
+  height: 80vh; /* Set the height to 80% of the viewport height */
+  max-width: 100%; /* Ensure the video does not exceed the modal width */
+  max-height: calc(80vh - 40px); /* Limit the maximum height to 80% of the viewport height minus padding */
+}
   
   /* Close button */
   .close {
-    color: #ff0000;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0); /* Adjust opacity here */
     border-radius: 100px;
   }
   

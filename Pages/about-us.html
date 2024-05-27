@@ -57,7 +57,7 @@
         </div>
         
 
-        ><button class="aboutus-button-1">
+        <button class="aboutus-button-1">
           <span class="aboutus-contact-us">Contact Us</span>
           <div class="arrow-right"><img src="/Img/Right-Arrow.png" alt=""></div></div>
         </button>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="middle-content">
                     <h1>What we Offer</h1>
-                    <p>Order now and appreciate the beauty of nature</p>
+                    <p>Order now and appreciate the beauty of flowers</p>
                 </div>
                 <div class="right-gif">
                     <img src="/Img/Gif1.gif" alt="">
@@ -159,6 +159,19 @@
     videoPopup.style.display = "none";
     }
 
+    function openVideoPopup() {
+    var videoPopup = document.getElementById("video-popup");
+    var modalOverlay = document.querySelector(".modal-overlay");
+    videoPopup.style.display = "block";
+    modalOverlay.style.display = "block"; // Display the overlay
+}
+
+function closeVideoPopup() {
+    var videoPopup = document.getElementById("video-popup");
+    var modalOverlay = document.querySelector(".modal-overlay");
+    videoPopup.style.display = "none";
+    modalOverlay.style.display = "none"; // Hide the overlay
+}
 
     </script>
 </body>

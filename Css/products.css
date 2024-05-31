@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+body {
+    background: #FFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    padding: 8rem 2rem 3rem 2rem; /* Adjusted padding to push content down */
+}
+
+.Our-prd {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style for active category button */
+.category-buttons button.active,
+.category-buttons button:hover {
+    background-color: #4CAF50; /* Change this to match your button's active color */
+    color: white;
+}
+
+/* Style for all other buttons */
+.category-buttons button {
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.category-buttons button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.container .category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centering buttons vertically */
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+}
+
+.container .category-buttons button {
+    padding: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit; /* Or specify the color you want */
+    border-radius: 0;
+    border-bottom: 3px solid transparent; /* Initially transparent to avoid jumping */
+    transition: border-color 0.3s; /* Add transition effect */
+}
+
+.container .category-buttons button:hover,
+.container .category-buttons button:focus {
+    border-bottom-color: #11A500; /* Color of the line when hovering or focused */
+}
+
+.container .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Adjusted minimum size */
+    gap: 2rem;
+}
+
+.container .products-container .product {
+    text-align: center;
+    padding: 2rem; /* Adjusted padding */
+    background: #fff;
+    border-radius: 25px; /* Rounded corners */
+    outline: .1rem solid #ccc;
+    outline-offset: -1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.container .products-container .product:hover {
+    outline: .2rem solid #222;
+    outline-offset: 0;
+}
+
+.container .products-container .product img {
+    height: 20rem; /* Reduced image height */
+}
+
+.container .products-container .product:hover img {
+    transform: scale(.9);
+}
+
+.container .products-container .product h3 {
+    padding: .5rem 0;
+    font-size: 1.8rem; /* Reduced font size */
+    color: #444;
+}
+
+.container .products-container .product:hover h3 {
+    color: #27ae60;
+}
+
+.container .products-container .product .price {
+    font-size: 1.8rem; /* Reduced font size */
+    color: #444;
+}
+
+.products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview {
+    display: none;
+    padding: .5rem; /* Adjusted padding */
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: .5rem; /* Adjusted margin */
+    width: 18rem; /* Further reduced width */
+}
+
+.products-preview .preview.active {
+    display: inline-block;
+}
+
+.products-preview .preview img {
+    height: 15rem; /* Further reduced image height */
+}
+
+.products-preview .preview .fa-times {
+    position: absolute;
+    top: .5rem;
+    right: .75rem; /* Adjusted position */
+    cursor: pointer;
+    color: #444;
+    font-size: 3rem; /* Reduced font size */
+}
+
+.products-preview .preview .fa-times:hover {
+    transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+    color: #444;
+    padding: .5rem 0;
+    font-size: 1.6rem; /* Reduced font size */
+}
+
+.products-preview .preview p {
+    line-height: 1.5;
+    padding: .5rem 0;
+    font-size: 1.2rem; /* Further reduced font size */
+    color: #777;
+}
+
+.products-preview .preview .price {
+    padding: .5rem 0;
+    font-size: 1.8rem; /* Reduced font size */
+    color: #27ae60;
+}
+
+.products-preview .preview .buttons {
+    display: flex;
+    gap: .5rem; /* Adjusted gap */
+    flex-wrap: wrap;
+    margin-top: .5rem; /* Adjusted margin */
+    justify-content: center; /* Centering buttons horizontally */
+}
+
+.products-preview .preview .buttons a {
+    flex: 1 1 6rem; /* Further reduced size */
+    padding: .5rem; /* Adjusted padding */
+    font-size: 1.2rem; /* Further reduced font size */
+    color: #11A500;
+    border: .1rem solid #306605;
+}
+
+.products-preview .preview .buttons a.cart {
+    background: #306605;
+    color: #fff;
+}
+
+.products-preview .preview .buttons a.cart:hover {
+    background: #11A500;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+    background: #11A500;
+    color: #fff;
+}

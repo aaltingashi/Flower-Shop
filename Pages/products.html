@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/Css/products.css">
+    <link rel="stylesheet" href="/Css/Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.0.0/pixi.min.js"></script>
+
+
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 4.46663C11.2 3.39996 12.8 3.39996 13.6 4.46663L16.5703 8.42701L20.2567 4.33099C20.5337 4.02323 20.9717 3.918 21.3583 4.06634C21.7448 4.21468 22 4.58591 22 4.99996V12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12V4.99996C2 4.58591 2.25517 4.21468 2.64174 4.06634C3.0283 3.918 3.46631 4.02323 3.74329 4.33099L7.42971 8.42701L10.4 4.46663ZM6.52173 10.4078L4 7.60592V12C4 16.2553 7.32236 19.7346 11.5146 19.9855C11.4638 19.9572 11.4149 19.9242 11.3685 19.8865L12 19.1111L12.6315 19.8865C12.5851 19.9242 12.5362 19.9572 12.4854 19.9855C16.6776 19.7346 20 16.2553 20 12V7.60592L17.4783 10.4078C17.4751 10.4537 17.4714 10.5032 17.4673 10.5563C17.4425 10.8722 17.3998 11.3138 17.3275 11.8215C17.1853 12.8196 16.9193 14.1439 16.4119 15.2714C15.8451 16.5309 14.8776 17.6911 14.1005 18.505C13.7044 18.9199 13.3415 19.2616 13.0768 19.5003C12.9441 19.6199 12.8354 19.7143 12.7587 19.7798C12.7203 19.8125 12.6898 19.8381 12.6683 19.856L12.6429 19.8771L12.6354 19.8833L12.633 19.8852L12.6321 19.8859L12.6318 19.8862C12.6316 19.8863 12.6315 19.8865 12 19.1111C11.3685 19.8865 11.3684 19.8863 11.3682 19.8862L11.3679 19.8859L11.367 19.8852L11.3646 19.8833L11.3571 19.8771L11.3317 19.856C11.3102 19.8381 11.2797 19.8125 11.2413 19.7798C11.1646 19.7143 11.0559 19.6199 10.9232 19.5003C10.6585 19.2616 10.2956 18.9199 9.89949 18.505C9.12239 17.6911 8.15485 16.5309 7.58808 15.2714C7.08069 14.1439 6.81466 12.8196 6.67249 11.8215C6.60017 11.3138 6.55746 10.8722 6.53274 10.5563C6.52859 10.5032 6.52494 10.4537 6.52173 10.4078ZM15.4804 10.3071L12 5.66663L8.51962 10.3071C8.52175 10.3365 8.52408 10.3676 8.52664 10.4002C8.54879 10.6833 8.58733 11.0819 8.65251 11.5395C8.78534 12.472 9.01931 13.5782 9.41192 14.4507C9.83926 15.4003 10.6217 16.3652 11.3461 17.124C11.583 17.3721 11.807 17.5913 12 17.773C12.193 17.5913 12.417 17.3721 12.6539 17.124C13.3783 16.3652 14.1607 15.4003 14.5881 14.4507C14.9807 13.5782 15.2147 12.472 15.3475 11.5395C15.4127 11.0819 15.4512 10.6833 15.4734 10.4002C15.4759 10.3676 15.4782 10.3365 15.4804 10.3071Z" fill="#000000"></path> </g></svg><a href="#" class="logo">VA Flowershop</a>
+        </div>
+        <div class="nav-center">
+            <a href="/Pages/Home.html">Home</a>
+            <a href="/Pages/about-us.html">About Us</a>
+            <a href="/Pages/products.html">Products</a>
+            <a href="/Pages/contact-us.html">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H18L17 14H7L6 6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="9" cy="20" r="1" stroke="white" stroke-width="2"/>
+                    <circle cx="15" cy="20" r="1" stroke="white" stroke-width="2"/>
+                </svg>
+            </a>
+            <a href="/Pages/login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="Our-prd"><h1>Our Products</h1></div>
+        <div class="category-buttons">
+           <button data-category="Plants">Plants</button>
+           <button data-category="Bouquets">Bouquets</button>
+           <button data-category="Gifts">Gifts</button>
+           <button class="back">Back to All</button>
+
+        </div>
+     
+        <div class="products-container">
+     
+           <!-- Plants Category -->
+           <div class="product" data-name="p-1" data-category="Plants">
+              <img src="/Img/Plants/Foto2.png" alt="">
+              <h3>Lily plant</h3>
+              <div class="price">20.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-2" data-category="Plants">
+              <img src="/Img/Plants/Foto3.png" alt="">
+              <h3>Orchid plant</h3>
+              <div class="price">21.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-3" data-category="Plants">
+              <img src="/Img/Plants/Foto4.png" alt="">
+              <h3>Red calla lily</h3>
+              <div class="price">12.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-4" data-category="Plants">
+              <img src="/Img/Plants/Foto5.png" alt="">
+              <h3>Rose plant</h3>
+              <div class="price">11.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-5" data-category="Plants">
+              <img src="/Img/Plants/Foto6.png" alt="">
+              <h3>Sunflower plant</h3>
+              <div class="price">13.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-6" data-category="Plants">
+              <img src="/Img/Plants/Foto7.png" alt="">
+              <h3>Tulip plant</h3>
+              <div class="price">20.00 Euro </div>
+           </div>
+     
+           <!-- Bouquets Category -->
+           <div class="product" data-name="p-7" data-category="Bouquets">
+              <img src="/Img/Bouquets/Foto9.png" alt="">
+              <h3>Whitchura bouquet</h3>
+              <div class="price">40.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-8" data-category="Bouquets">
+              <img src="/Img/Bouquets/Foto9-1.png" alt="">
+              <h3>Persian bouquet</h3>
+              <div class="price">50.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-9" data-category="Bouquets">
+              <img src="/Img/Bouquets/Foto9-2.png" alt="">
+              <h3>Yellow & Purple tulips bouquet</h3>
+              <div class="price">30.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-10" data-category="Bouquets">
+              <img src="/Img/Bouquets/Foto9-3.png" alt="">
+              <h3>Baby pink tulips bouquet</h3>
+              <div class="price">45.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-11" data-category="Bouquets">
+              <img src="/Img/Bouquets/Foto9-4.png" alt="">
+              <h3>Pink tulips bouquet</h3>
+              <div class="price">65.00</div>
+           </div>
+     
+           <div class="product" data-name="p-12" data-category="Bouquets">
+              <img src="/Img/Bouquets/Foto9-5.png" alt="">
+              <h3>Red Tulips bouquet</h3>
+              <div class="price">55.00 Euro</div>
+           </div>
+     
+           <!-- Gifts Category -->
+           <div class="product" data-name="p-13" data-category="Gifts">
+              <img src="/Img/Gifts/Foto8.png" alt="">
+              <h3>Pink roses with bow</h3>
+              <div class="price">25.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-14" data-category="Gifts">
+              <img src="/Img/Gifts/Foto9-1.png" alt="">
+              <h3>Pink roses box</h3>
+              <div class="price">40.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-15" data-category="Gifts">
+              <img src="/Img/Gifts/Foto9-2.png" alt="">
+              <h3>Peach roses box</h3>
+              <div class="price">45.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-16" data-category="Gifts">
+              <img src="/Img/Gifts/Foto9-3.png" alt="">
+              <h3>Pink & White tulips box</h3>
+              <div class="price">60.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-17" data-category="Gifts">
+              <img src="/Img/Gifts/Foto9-4.png" alt="">
+              <h3>White tulips box</h3>
+              <div class="price">50.00 Euro</div>
+           </div>
+     
+           <div class="product" data-name="p-18" data-category="Gifts">
+              <img src="/Img/Gifts/Foto9.png" alt="">
+              <h3>Red roses box</h3>
+              <div class="price">20.00 Euro</div>
+           </div>
+     
+        </div>
+     
+     </div>
+     
+     <div class="products-preview">
+     
+         <!-- Plants -->
+         <div class="preview" data-target="p-1">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Plants/Foto2.png" alt="">
+             <h3>Lily Plant</h3>
+             <p>The Lily Plant is known for its beautiful trumpet-shaped flowers and fragrant scent.</p>
+             <div class="price">20.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-2">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Plants/Foto3.png" alt="">
+             <h3>Orchid Plant</h3>
+             <p>Orchid Plants are elegant and exotic, perfect for adding a touch of sophistication to any space.</p>
+             <div class="price">21.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-3">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Plants/Foto4.png" alt="">
+             <h3>Red Calla Lily</h3>
+             <p>The Red Calla Lily is striking and vibrant, ideal for adding a bold statement to your garden.</p>
+             <div class="price">12.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-4">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Plants/Foto5.png" alt="">
+             <h3>Rose Plant</h3>
+             <p>Rose Plants are classic and romantic, perfect for adding timeless beauty to any garden.</p>
+             <div class="price">11.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-5">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Plants/Foto6.png" alt="">
+             <h3>Sunflower Plant</h3>
+             <p>The Sunflower Plant is cheerful and bright, bringing a touch of sunshine to your garden.</p>
+             <div class="price">13.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-6">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Plants/Foto7.png" alt="">
+             <h3>Tulip Plant</h3>
+             <p>The Tulip Plant is elegant and colorful, perfect for adding a splash of color to your garden.</p>
+             <div class="price">20.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <!-- Bouquets -->
+         <div class="preview" data-target="p-7">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Bouquets/Foto9.png" alt="">
+             <h3>Whitchura Bouquet</h3>
+             <p>The Whitchura Bouquet is a stunning arrangement of white flowers, perfect for any occasion.</p>
+             <div class="price">40.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-8">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Bouquets/Foto9-1.png" alt="">
+             <h3>Persian Bouquet</h3>
+             <p>The Persian Bouquet is a luxurious and vibrant arrangement, perfect for special occasions.</p>
+             <div class="price">50.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-9">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Bouquets/Foto9-2.png" alt="">
+             <h3>Yellow & Purple Tulips Bouquet</h3>
+             <p>This bouquet of Yellow and Purple Tulips is bright and cheerful, perfect for uplifting spirits.</p>
+             <div class="price">30.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-10">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Bouquets/Foto9-3.png" alt="">
+             <h3>Baby Pink Tulips Bouquet</h3>
+             <p>The Baby Pink Tulips Bouquet is delicate and charming, perfect for expressing gentle emotions.</p>
+             <div class="price">45.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-11">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Bouquets/Foto9-4.png" alt="">
+             <h3>Pink Tulips Bouquet</h3>
+             <p>This Pink Tulips Bouquet is vibrant and lovely, perfect for any celebration or as a gift.</p>
+             <div class="price">65.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-12">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Bouquets/Foto9-5.png" alt="">
+             <h3>Red Tulips Bouquet</h3>
+             <p>The Red Tulips Bouquet is bold and beautiful, perfect for making a statement.</p>
+             <div class="price">55.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <!-- Gifts -->
+         <div class="preview" data-target="p-13">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Gifts/Foto8.png" alt="">
+             <h3>Pink Roses with Bow</h3>
+             <p>Pink Roses with a bow, beautifully arranged to add elegance to any setting.</p>
+             <div class="price">25.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-14">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Gifts/Foto9-1.png" alt="">
+             <h3>Pink Roses Box</h3>
+             <p>The Pink Roses Box is a lovely gift, perfect for showing appreciation and love.</p>
+             <div class="price">40.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-15">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Gifts/Foto9-2.png" alt="">
+             <h3>Peach Roses Box</h3>
+             <p>The Peach Roses Box is soft and beautiful, ideal for delicate and thoughtful gifts.</p>
+             <div class="price">45.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-16">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Gifts/Foto9-3.png" alt="">
+             <h3>Pink & White Tulips Box</h3>
+             <p>This Pink & White Tulips Box is elegant and perfect for any sophisticated gift-giving occasion.</p>
+             <div class="price">60.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-17">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Gifts/Foto9-4.png" alt="">
+             <h3>White Tulips Box</h3>
+             <p>The White Tulips Box is pure and elegant, perfect for expressing sincere sentiments.</p>
+             <div class="price">50.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+         <div class="preview" data-target="p-18">
+             <i class="fas fa-times"></i>
+             <img src="/Img/Gifts/Foto9.png" alt="">
+             <h3>Red Roses Box</h3>
+             <p>The Red Roses Box is a classic and timeless gift, perfect for any romantic occasion.</p>
+             <div class="price">20.00 Euro</div>
+             <div class="buttons">
+                 <a href="#" class="buy">buy now</a>
+                 <a href="#" class="cart">add to cart</a>
+             </div>
+         </div>
+     
+     </div>
+
+     <script src="/js/products.js"></script>
+
+     <script>
+        function handleClick(clickedButton) {
+  const buttons = document.querySelectorAll('.button');
+  buttons.forEach(button => {
+    if (button === clickedButton) {
+      button.classList.add('clicked');
+    } else {
+      button.classList.remove('clicked');
+    }
+  });
+}
+     </script>
+</body>
+</html>

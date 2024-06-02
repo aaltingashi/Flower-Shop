@@ -15,12 +15,13 @@
   .title {
     height: 60px;
     border-bottom: 1px solid #E1E8EE;
-    padding: 20px 30px;
-    color: #5E6977;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 0px 20px ;
+    color: black;
   }
    
+  .title h1{
+    font-size: 24px;
+  }
   .item {
     padding: 20px 30px;
     height: 120px;

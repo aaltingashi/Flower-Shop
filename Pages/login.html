@@ -49,7 +49,7 @@
       <div class="remember-forgot">
         <label><input type="checkbox">Remember Me</label>
       </div>
-      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn" onclick="audio.play();">Login</button>
       <div class="register-link">
         <p>Don't have an account? <a href="#" id="show-register-form">Register</a></p>
       </div>
@@ -73,7 +73,7 @@
       </div>
       <!-- Add other fields as needed -->
 
-      <button type="submit" class="btn">Register</button>
+      <button type="submit" class="btn" onclick="audio.play();">Register</button>
     </form>
 
     <div id="logged-in-message" style="display: none;">
@@ -118,5 +118,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 </script>
+
+<script type="text/javascript">
+  const audio = new Audio();
+  audio.src= "/Img/button-pressed.mp3";
+</script>
+
 </body>
 </html>

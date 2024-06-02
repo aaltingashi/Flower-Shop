@@ -130,7 +130,7 @@
   <div class="best-selling">
     <h1>Best Selling products</h1>
     <p>Easiest way to healthy life by buying your favorite plants</p>
-    <button class="see-more">See more →</button>
+    <a href="/Pages/products.html"><button class="see-more" onclick="audio.play();">See more →</button></a>
   </div>
 
   <div class="container-slider">
@@ -138,29 +138,29 @@
   <div class="slider">
     <div class="slide">
         <div class="product">
-            <img src="/Img/Buqeta1.jpg" alt="Natural Plants">
-            <p>Pink Rose</p>
-            <p class="price">Euro 25.00</p>
+            <img src="/Img/Bouquets/Foto9-3.png" alt="Natural Plants">
+            <p>Baby Pink Tulips Bouquet</p>
+            <p class="price">45.00 Euro</p>
         </div>
     </div>
     <div class="slide">
         <div class="product">
-            <img src="/Img/Buqeta2.jpg" alt="Eternity White Roses">
-            <p>White Tulips</p>
-            <p class="price">Euro 29.99</p>
+            <img src="/Img/Plants/Foto3.png" alt="Eternity White Roses">
+            <p>Orchid Plant</p>
+            <p class="price">21.00 Euro</p>
         </div>
     </div>
     <div class="slide">
         <div class="product">
-            <img src="/Img/Buqeta3.jpg" alt="Artificial Plants">
-            <p>Red Roses</p>
-            <p class="price">Euro 30.00</p>
+            <img src="/Img/Gifts/Foto9.png" alt="Artificial Plants">
+            <p>Red Roses Box</p>
+            <p class="price">20.00 Euro</p>
         </div>
     </div>
   </div>
   <div class="navigation-arrows">
-    <button class="prev-arrow">&lt;</button>
-    <button class="next-arrow">&gt;</button>
+    <button class="prev-arrow" onclick="audio.play();">&lt;</button>
+    <button class="next-arrow" onclick="audio.play();">&gt;</button>
   </div>
   </div>
   </div>
@@ -189,7 +189,7 @@
   <img class="left-top-gif" src="/Img/leaf-aboutus.gif" alt="Left Top GIF">
   <img class="right-bottom-gif" src="/Img/leaf-aboutus.gif" alt="Right Bottom GIF">
   <div class="bottom">
-    <button class="see-more">See more →</button>
+    <a href="/Pages/products.html"><button class="see-more" onclick="audio.play();">See more →</button></a>
   </div>
 </div>
 
@@ -210,7 +210,7 @@
           <textarea id="message" name="message" placeholder="Message" required></textarea>
         </div>
         <div class="form-group">
-          <button type="submit">Submit</button>
+          <button type="submit" onclick="audio.play();">Submit</button>
         </div>
       </form>
     </div>
@@ -218,6 +218,11 @@
 </div>
 
 <script src="/js/home.js"></script>
+
+<script type="text/javascript">
+  const audio = new Audio();
+  audio.src= "/Img/ButtonSound.mp3";
+</script>
 
 </body>
 </html>

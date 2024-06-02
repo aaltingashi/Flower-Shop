@@ -42,7 +42,7 @@
           celebrating a special occasion or just brightening someone's day, we
           have the perfect arrangement to express your feelings.</span>
         
-        <button class="aboutus-button" onclick="openVideoPopup()">
+        <button class="aboutus-button" onclick="openVideoPopup()" >
             <span class="watch-video">Watch Video</span>
             <div class="polygon">
                 <img src="/Img/Play-Button.png" alt="">
@@ -57,10 +57,10 @@
         </div>
         
 
-        <button class="aboutus-button-1">
+        <a href="/Pages/contact-us.html"><button class="aboutus-button-1" onclick="audio.play();">
           <span class="aboutus-contact-us">Contact Us</span>
           <div class="arrow-right"><img src="/Img/Right-Arrow.png" alt=""></div></div>
-        </button>
+        </button></a>
       </div>
 
     <div class="about-mainphoto">
@@ -160,5 +160,11 @@
     }
 
     </script>
+
+<script type="text/javascript">
+  const audio = new Audio();
+  audio.src= "/Img/button-pressed.mp3";
+</script>
+
 </body>
 </html>

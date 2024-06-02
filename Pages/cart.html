@@ -50,11 +50,11 @@
           </div>
        
           <div class="quantity">
-            <button class="plus-btn" type="button" name="button">
+            <button class="plus-btn" type="button" name="button" onclick="audio.play();">
               <img src="/Img/plus.svg" alt="" />
             </button>
             <input type="number" class="quantity-input" name="name" value="1">
-            <button class="minus-btn" type="button" name="button">
+            <button class="minus-btn" type="button" name="button" onclick="audio.play();">
               <img src="/Img/minus.svg" alt="" />
             </button>
           </div>
@@ -75,11 +75,11 @@
           </div>
        
           <div class="quantity">
-            <button class="plus-btn" type="button" name="button">
+            <button class="plus-btn" type="button" name="button" onclick="audio.play();">
               <img src="/Img/plus.svg" alt="" />
             </button>
             <input type="number" class="quantity-input" name="name" value="1">
-            <button class="minus-btn" type="button" name="button">
+            <button class="minus-btn" type="button" name="button" onclick="audio.play();">
               <img src="/Img/minus.svg" alt="" />
             </button>
           </div>
@@ -100,11 +100,11 @@
           </div>
        
           <div class="quantity">
-            <button class="plus-btn" type="button" name="button">
+            <button class="plus-btn" type="button" name="button" onclick="audio.play();">
               <img src="/Img/plus.svg" alt="" />
             </button>
             <input type="number" class="quantity-input" name="name" value="1">
-            <button class="minus-btn" type="button" name="button">
+            <button class="minus-btn" type="button" name="button" onclick="audio.play();">
               <img src="/Img/minus.svg" alt="" />
             </button>
           </div>
@@ -118,7 +118,7 @@
         </div>
 
         <!-- Pay Now Button -->
-        <button class="pay">Pay</button>
+        <button class="pay" onclick="audio.play();">Pay</button>
     </div>
     <div class="footer">
       <div class="footer-top">
@@ -192,8 +192,10 @@
     // Initial total price calculation
     calculateTotalPrice();
 });
-
-    </script>
-
+</script>
+<script type="text/javascript">
+  const audio = new Audio();
+  audio.src= "/Img/button-pressed.mp3";
+</script>
 </body>
 </html>

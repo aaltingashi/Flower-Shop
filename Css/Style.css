@@ -546,3 +546,130 @@ p, a, button{
 .container-form .form-group button:hover {
   background-color: #45a049;
 }
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3a754e;
+  color: white;
+  padding: 20px;
+  border-radius: 35px 35px 0 0 ;
+}
+
+.footer-top {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa; /* Adjust color as needed */
+}
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-content div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer .nav-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .nav-left svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer .nav-left .logo {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.footer .links a {
+  color: white;
+  margin: 5px; 
+  text-decoration: none;
+}
+
+.footer .newsletter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 40px; 
+}
+
+.newsletter input:focus {
+  border: none;
+  outline: none;
+}
+
+.footer .newsletter input[type="email"]{
+  padding: 10px;
+  border: 1px solid #4CAF50;
+  border-radius: 25px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.newsletter input::placeholder {
+  color: white; /* Change the color to your desired color */
+}
+
+.footer .newsletter button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  margin: auto;
+  width: auto; 
+  height: 35px;
+  top: -43px;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #3a754e;
+  top: 0%;
+}
+
+.footer-divider {
+  width: 90%;
+  height: 1px;
+  background-color: #4CAF50; 
+  margin-top: 30px;
+}

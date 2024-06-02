@@ -214,3 +214,7 @@ body {
     background: #11A500;
     color: #fff;
 }
+
+.footer .newsletter button {
+    top: -81px !important;
+}

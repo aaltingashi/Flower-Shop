@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TOP Flower eCommerce Website">
+    <meta name="keywords" content="Flower, Shop, Online, Beautiful">
+    <meta name="author" content="Altin Vjollca">
+    <link rel="icon" type="image/x-icon" href="/Img/logo-ico.ico">
     <title>About Us - VA Flower Shop</title>
     <link rel="stylesheet" href="/Css/Style.css">
     <link rel="stylesheet" href="/Css/about.css">
@@ -70,6 +74,10 @@
 
     </section>
     
+    <div class="hero" id="pixi-container">
+      <!-- <h1>Feel the flower</h1> -->
+    </div>
+
     <section class="about-box-section">
       <div class="what-we-offer-container">
         <div class="about-content">
@@ -195,6 +203,102 @@
   const audio = new Audio();
   audio.src= "/Img/button-pressed.mp3";
 </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.0/pixi.min.js'></script>
+
+
+<script>
+  // Create a new application
+  const app = new PIXI.Application({
+      width: window.innerWidth,
+      height: 400, // Ensure it matches the container height
+      backgroundColor: 0x1099bb
+  });
+
+  // Append the application canvas to the pixi-container
+  const container = document.getElementById('pixi-container');
+  container.appendChild(app.view);
+
+  console.log('PIXI application created and appended to container');
+
+  // Prepare circle texture, that will be our brush
+  const brush = new PIXI.Graphics();
+  brush.beginFill(0xffffff);
+  brush.drawCircle(0, 0, 50);
+  brush.endFill();
+
+  console.log('Brush created');
+
+  // Create a line that will interpolate the drawn points
+  const line = new PIXI.Graphics();
+
+  // Load the textures using PIXI.Loader
+  PIXI.Loader.shared
+      .add('background', '/Img/bg-pixi-gift.png')
+      .add('imageToReveal', '/Img/bg-pixi.png')
+      .load((loader, resources) => {
+          console.log('Textures loaded:', resources);
+
+          const background = new PIXI.Sprite(resources.background.texture);
+          const imageToReveal = new PIXI.Sprite(resources.imageToReveal.texture);
+
+          background.width = app.screen.width;
+          background.height = app.screen.height;
+          imageToReveal.width = app.screen.width;
+          imageToReveal.height = app.screen.height;
+
+          const renderTexture = PIXI.RenderTexture.create({ width: app.screen.width, height: app.screen.height });
+          const renderTextureSprite = new PIXI.Sprite(renderTexture);
+
+          imageToReveal.mask = renderTextureSprite;
+
+          app.stage.addChild(background, imageToReveal, renderTextureSprite);
+
+          console.log('Sprites created and added to stage');
+
+          app.stage.interactive = true;
+          app.stage.hitArea = app.screen;
+          app.stage
+              .on('pointerdown', pointerDown)
+              .on('pointerup', pointerUp)
+              .on('pointerupoutside', pointerUp)
+              .on('pointermove', pointerMove);
+
+          let dragging = false;
+          let lastDrawnPoint = null;
+
+          function pointerMove(event) {
+              const { x, y } = event.data.global;
+              if (dragging) {
+                  brush.position.set(x, y);
+                  app.renderer.render(brush, renderTexture, false, null, false);
+
+                  if (lastDrawnPoint) {
+                      line.clear();
+                      line.lineStyle(100, 0xffffff);
+                      line.moveTo(lastDrawnPoint.x, lastDrawnPoint.y);
+                      line.lineTo(x, y);
+                      app.renderer.render(line, renderTexture, false, null, false);
+                  }
+                  if (!lastDrawnPoint) lastDrawnPoint = new PIXI.Point();
+                  lastDrawnPoint.set(x, y);
+              }
+          }
+
+          function pointerDown(event) {
+              dragging = true;
+              pointerMove(event);
+          }
+
+          function pointerUp(event) {
+              dragging = false;
+              lastDrawnPoint = null;
+          }
+      });
+</script>
+
 
 </body>
 </html>

@@ -111,3 +111,31 @@ body {
     height: 100% !important;
     overflow: hidden;
 }
+
+/* audio */
+.audio-controls {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.audio-controls button {
+    margin: 0 5px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.audio-controls button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
